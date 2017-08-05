@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.assignment9.manojkulkarni.firebasefinal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".HospitalApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/appicon"
+        android:label="Health Care"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC3RBUWWf9XAX9maKBca_YgVKWLSjwVITk" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+        <activity
+            android:name=".CardView"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+        <activity
+            android:name=".MapsActivity"
+            android:theme="@style/AppTheme.AppBarOverlay" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BloodDonorsActivity" />
+        <activity
+            android:name=".CardView1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".YoutubeActivity" />
+        <activity android:name=".CardView2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
